@@ -7,4 +7,28 @@
 html body {
     height: 100vh;
     width: 100vw;
+    background-color: black;
+}
+body{
+    background:url('../imagens/fundo-madeira.jpg') no-repeat top center;/*Aqui usamos um hansshot com o background: bacground-image:url(); > background-repeat:no-repeat; > background-position:top center;. Desta forma estamos configurando body para que tenha uma imagem, esta imagem não deve se multiplicar ou repetir para ocupar todo espaço, e ela vai ter sua parte do topo central em uso.*/
+    background-size: cover;/*Para nossa imagem ocupar a tela inteira*/
+    background-attachment: fixed;/*Para que não tenha rolagem na página.*/
+}
+
+main{
+    height: 100vh;
+    position: relative;
+}  
+section#telefone{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('../imagens/frame-iphone.png') no-repeat;
+    
+
+    height: 626px;
+    width: 311px;
+   
+    
 }
