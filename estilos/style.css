@@ -10,7 +10,7 @@ html body {
     background-color: black;
 }
 body{
-    background:url('../imagens/fundo-madeira.jpg') no-repeat top center;/*Aqui usamos um hansshot com o background: bacground-image:url(); > background-repeat:no-repeat; > background-position:top center;. Desta forma estamos configurando body para que tenha uma imagem, esta imagem não deve se multiplicar ou repetir para ocupar todo espaço, e ela vai ter sua parte do topo central em uso.*/
+    background:url('../imagens/fundo-madeira.jpg') no-repeat bottom center;/*Aqui usamos um hansshot com o background: bacground-image:url(); > background-repeat:no-repeat; > background-position:top center;. Desta forma estamos configurando body para que tenha uma imagem, esta imagem não deve se multiplicar ou repetir para ocupar todo espaço, e ela vai ter sua parte do topo central em uso.*/
     background-size: cover;/*Para nossa imagem ocupar a tela inteira*/
     background-attachment: fixed;/*Para que não tenha rolagem na página.*/
 }
@@ -29,11 +29,36 @@ section#telefone{
     height: 626px;
     width: 311px;
 }
+section#redes-sociais{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 15px;
+}
+section#redes-sociais, img{
+    display: flex;
+    width: 50px;
+    justify-content:space-around;
+    margin: 15px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    
+}
+
+#redes-sociais, img:hover{
+    animation: xenon-glow 1s infinite alternate;
+    box-shadow: 0 0 5px #00ffff82, 0 0 10px #00ffff83, 0 0 20px #00ffff7e, 0 0 40px #00ffff7c;
+      
+}
+   
 iframe#tela {
     position: relative;
     top: 80px;
     left: 22px;
     height: 471px;
     width: 265px;
-   
+      
 }
